@@ -5,7 +5,7 @@ import Linkedin from "../assets/SVG/linkedin.svg";
 import Github from "../assets/SVG/github.svg";
 import X from "../assets/SVG/x.svg";
 import Download from "../assets/SVG/download.svg";
-
+import Resume from "../assets/resume.pdf"
 export const Hero = () => {
   return (
     <>
@@ -76,7 +76,7 @@ export const Hero = () => {
             </a>
           </div>
           <a
-            href="./src/assets/resume.pdf"
+            href={Resume}
             download="Vishwas's Resume"
             target="_blank"
           >

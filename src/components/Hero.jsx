@@ -1,7 +1,11 @@
 import React from "react";
 import banner from "../assets/images/banner.jpeg";
 import profile from "../assets/images/profile.png";
-import { Download, Linkedin, Github, Mail } from "lucide-react";
+import Linkedin from "../assets/SVG/linkedin.svg";
+import Github from "../assets/SVG/github.svg";
+import X from "../assets/SVG/x.svg";
+import Download from "../assets/SVG/download.svg";
+
 export const Hero = () => {
   return (
     <>
@@ -33,24 +37,44 @@ export const Hero = () => {
 
           {/* Social Links */}
           <div className="flex">
+            <a
+              href="https://www.linkedin.com/in/vishwas-kumar-web/"
+              target="_blank"
+            >
+              <button className="p-2 rounded-full text-green-600">
+                {/* <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="w-5 h-5 text-green-600"
+                />
+                ; */}
+                <img src={Linkedin} alt="" className="w-8 bg-green-500" />
+              </button>
+            </a>
+            <a href="https://github.com/kumarvishwas2003" target="_blank">
+              <button className="p-2 rounded-full hover:bg-gray-100">
+                {/* <Github className="w-5 h-5" /> */}
+                <img src={Github} alt="" className="w-8 bg-green-500 p-px" />
+              </button>
+            </a>
+            <a href="https://x.com/VishwasKum76893" target="_blank">
             <button className="p-2 rounded-full hover:bg-gray-100">
-              <Linkedin className="w-5 h-5 text-green-600" />
+              {/* <Mail className="w-5 h-5 text-green-600" /> */}
+              <img src={X} alt="" className="w-8 bg-green-500 p-2" />
             </button>
-            <button className="p-2 rounded-full hover:bg-gray-100">
-              <Github className="w-5 h-5" />
-            </button>
-            <button className="p-2 rounded-full hover:bg-gray-100">
-              <Mail className="w-5 h-5 text-green-600" />
-            </button>
+            </a>
           </div>
           <a
             href="./src/assets/resume.pdf"
             download="Vishwas's Resume"
             target="_blank"
           >
-            <button className="px-2 py-2 border mb-3 border-green-500 rounded-full flex items-center gap-2 bg-black-500 text-green-500 hover:bg-gray-50 font-bold">
-              <Download className="w-4 h-4" />
-              <span>Download Resume</span>
+            <button className="px-3 py-2 border mb-3 mt-2 border-green-500 rounded-full flex items-center gap-2 bg-black-500 text-green-500 hover:bg-gray-50 font-bold">
+              <img
+                src={Download}
+                alt=""
+                className="w-8 bg-green-500 rounded-3xl p-2 font-extrabold"
+              />
+              Download Resume
             </button>
           </a>
         </div>

@@ -3,7 +3,6 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import { Hero } from "./components/Hero";
 import MatrixRain from "./components/MatrixRain";
-import VanillaTilt from "vanilla-tilt";
 
 function App() {
   

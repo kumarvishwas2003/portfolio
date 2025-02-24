@@ -1,61 +1,78 @@
 import React from "react";
+import HTML from "../assets/SVG/html.svg";
+import CSS from "../assets/SVG/CSS.svg";
+import JS from "../assets/SVG/js.svg";
+import React_icon from "../assets/SVG/React.svg";
+import MySql from "../assets/SVG/mysql.svg";
+import Mongo from "../assets/SVG/mongo.svg";
+import Node from "../assets/SVG/node.svg";
+import Tail from "../assets/SVG/tailwind.svg";
+import Redux from "../assets/SVG/redux.svg";
+import EX from "../assets/SVG/express.svg";
+import Brain from "../assets/SVG/brain.svg";
+import Figma from "../assets/SVG/figma.svg";
 
 const skillsData = {
   skills: [
     {
       name: "HTML 5",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: HTML,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "CSS 3",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: CSS,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "Javascript",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: JS,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "MySQL",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: MySql,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "MongoDB",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: Mongo,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "Express.js",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: EX,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "React.js",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: React_icon,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "Node.js",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: Node,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "Redux",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: Redux,
+      iconBgColor: "black",
     },
     {
       name: "DSA",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: Brain,
+      // iconBgColor: "rgb(255, 218, 214)",
     },
     {
       name: "Tailwind CSS",
-      icon: "/api/placeholder/50/50",
-      iconBgColor: "rgb(255, 218, 214)",
+      icon: Tail,
+      iconBgColor: "black",
+    },
+    {
+      name: "Figma",
+      icon: Figma,
+      iconBgColor: "black",
     },
   ],
 };
@@ -67,12 +84,12 @@ const SkillCard = ({ skill }) => (
       style={{ backgroundColor: skill.iconBgColor }}
     >
       <img
-        src={skill.icon}
+        src={`${skill.icon}`}
         alt={`${skill.name} icon`}
-        className="w-12 h-12 object-contain"
+        className="w-12 h-12 object-contain bg-green-500 text-green-500 p-[5px] rounded-lg"
       />
     </div>
-    <h3 className="text-sm font-medium text-green-500 text-center">
+    <h3 className="text-md font-medium text-green-500 text-center">
       {skill.name}
     </h3>
   </div>
@@ -80,27 +97,26 @@ const SkillCard = ({ skill }) => (
 
 const Skills = () => {
   return (
-    <div className="w-full p-6 overflow-hidden">
+    <div className="w-full p-6 overflow-scroll">
       <h2 className="text-2xl font-bold mb-4 text-green-500">Skills</h2>
-      <marquee behavior="" direction="">
-        <div className="max-w-full">
-          <div className="flex">
-            <div className="inline-flex gap-6 pb-4">
-              {skillsData.skills.map((skill, index) => (
-                <SkillCard key={index} skill={skill} />
-              ))}
-            </div>
-            <div className="inline-flex gap-6 pb-4">
-              {skillsData.skills.map((skill, index) => (
-                <SkillCard key={index} skill={skill} />
-              ))}
-            </div>
+      {/* <marquee behavior="" direction=""> */}
+      <div className="max-w-full">
+        <div className="flex">
+          <div className="inline-flex gap-6 pb-4">
+            {skillsData.skills.map((skill, index) => (
+              <SkillCard key={index} skill={skill} />
+            ))}
           </div>
+          {/* <div className="inline-flex gap-6 pb-4">
+              {skillsData.skills.map((skill, index) => (
+                <SkillCard key={index} skill={skill} />
+              ))}
+            </div> */}
         </div>
-      </marquee>
+      </div>
+      {/* </marquee> */}
     </div>
   );
 };
 
 export default Skills;
-

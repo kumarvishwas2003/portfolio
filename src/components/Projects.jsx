@@ -1,37 +1,42 @@
 import React from "react";
 import Project_comp from "./Project_comp";
+import courage from '../assets/project_images/courage.jpeg'
+import budget from '../assets/project_images/budget.png'
+import calculator from "../assets/project_images/calculator.jpeg"
+import BMI from "../assets/project_images/BMI.jpeg";
+import tic from "../assets/project_images/tic.png";
 const Projects = () => {
   const allProjects = {
     projects: [
       {
-        name: "TierSync",
-        image: "tiersync.png",
+        name: "Courage GPT",
+        image: `${courage}`,
         description:
-          "A platform connecting students from different tier colleges for collaboration and community building.",
-      },
-      {
-        name: "College Event Manager",
-        image: "event_manager.png",
-        description:
-          "A system for club presidents to manage events, send QR-coded tickets, and track attendance.",
-      },
-      {
-        name: "Fit Counter",
-        image: "fit_counter.png",
-        description:
-          "A fitness app that suggests YouTube workout videos based on selected exercise types.",
+          "A fun and interactive chatbot inspired by the computer from the cartoon 'Courage the Cowardly Dog.' It generates sarcastic, hilarious, and dry humorous responses. The chatbot also features text-to-speech integration to make conversations even more engaging.",
       },
       {
         name: "Budget Buddy",
-        image: "budget_buddy.png",
+        image: `${budget}`,
         description:
-          "A finance tracker that records expenses and automates transaction updates via SMS.",
+          "A finance tracker web app that helps users log daily expenses and generate a structured summary, categorized by date and day. The platform also provides the option to download a PDF report for easy financial tracking and analysis.",
       },
       {
-        name: "Task Manager",
-        image: "task_manager.png",
+        name: "Tic Tac Toe",
+        image: `${tic}`,
         description:
-          "A React and Firebase-based task management app with authentication and real-time updates.",
+          "A digital version of the classic Tic Tac Toe game, allowing two players to compete against each other. The project focuses on user-friendly UI, responsive gameplay.",
+      },
+      {
+        name: "BMI Calculator",
+        image: `${BMI}`,
+        description:
+          "A simple yet effective Body Mass Index (BMI) calculator built to understand the fundamentals of responsive web design. The tool takes user input (height and weight) and calculates BMI, providing health insights based on predefined BMI categories.",
+      },
+      {
+        name: "React Calculator",
+        image: `${calculator}`,
+        description:
+          "A basic yet functional calculator built using React, designed to perform fundamental mathematical operations like addition, subtraction, multiplication, and division. This project served as a hands-on learning experience for React state management and UI design.",
       },
     ],
   };
@@ -52,6 +57,7 @@ const Projects = () => {
               key={index}
               name={element.name}
               description={element.description}
+              image={element.image}
             />
           ))}
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
+    <div data-tilt>
       <div className="font-bold mt-4 ml-4 text-xl text-green-500">About</div>
       <div className="p-4 text-lg leading-6 tracking-tighter text-justify text-green-500">
         I'm a frontend developer passionate about crafting seamless digital

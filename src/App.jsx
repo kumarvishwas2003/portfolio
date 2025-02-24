@@ -3,8 +3,10 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import { Hero } from "./components/Hero";
 import MatrixRain from "./components/MatrixRain";
+import VanillaTilt from "vanilla-tilt";
 
 function App() {
+  
   return (
     <div
       className="relative min-h-screen max-h-[400px] overflow-y-auto
@@ -28,7 +30,7 @@ function App() {
                 <div className="bg-black/90 border border-green-500/50 rounded-md shadow-lg shadow-green-500/50">
                   <Skills />
                 </div>
-                <div className="bg-black/90 border border-green-500/50 rounded-md shadow-lg shadow-green-500/50 ">
+                <div className="bg-black/90 border border-green-500/50 rounded-md shadow-lg shadow-green-500/50" data-tilt>
                   <About />
                 </div>
               </div>

@@ -5,7 +5,7 @@ import { Download, Linkedin, Github, Mail } from "lucide-react";
 export const Hero = () => {
   return (
     <>
-      <div className="main tracking-tighter">
+      <div className="main tracking-tighter" data-tilt>
         <div className="banner w-full h-[170px] relative border-b-2  bg-green-500 ">
           <img
             src={banner}
@@ -43,10 +43,16 @@ export const Hero = () => {
               <Mail className="w-5 h-5 text-green-600" />
             </button>
           </div>
-          <button className="px-2 py-2 border mb-3 border-green-500 rounded-full flex items-center gap-2 bg-black-500 text-green-500 hover:bg-gray-50 font-bold">
-            <Download className="w-4 h-4" />
-            <span>Download Resume</span>
-          </button>
+          <a
+            href="./src/assets/resume.pdf"
+            download="Vishwas's Resume"
+            target="_blank"
+          >
+            <button className="px-2 py-2 border mb-3 border-green-500 rounded-full flex items-center gap-2 bg-black-500 text-green-500 hover:bg-gray-50 font-bold">
+              <Download className="w-4 h-4" />
+              <span>Download Resume</span>
+            </button>
+          </a>
         </div>
       </div>
     </>

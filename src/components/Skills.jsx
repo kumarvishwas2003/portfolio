@@ -1,6 +1,6 @@
 import React from "react";
 import HTML from "../assets/SVG/html.svg";
-import CSS from "../assets/SVG/CSS.svg";
+import CSS from "../assets/SVG/css.svg";
 import JS from "../assets/SVG/js.svg";
 import React_icon from "../assets/SVG/React.svg";
 import MySql from "../assets/SVG/mysql.svg";
@@ -97,7 +97,7 @@ const SkillCard = ({ skill }) => (
 
 const Skills = () => {
   return (
-    <div className="w-full p-6 overflow-scroll">
+    <div className="w-full p-6 overflow-y-hidden">
       <h2 className="text-2xl font-bold mb-4 text-green-500">Skills</h2>
       {/* <marquee behavior="" direction=""> */}
       <div className="max-w-full">

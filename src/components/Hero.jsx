@@ -47,20 +47,32 @@ export const Hero = () => {
                   className="w-5 h-5 text-green-600"
                 />
                 ; */}
-                <img src={Linkedin} alt="" className="w-8 bg-green-500" />
+                <img
+                  src={Linkedin}
+                  alt=""
+                  className="w-8 bg-green-500 rounded-sm"
+                />
               </button>
             </a>
             <a href="https://github.com/kumarvishwas2003" target="_blank">
               <button className="p-2 rounded-full hover:bg-gray-100">
                 {/* <Github className="w-5 h-5" /> */}
-                <img src={Github} alt="" className="w-8 bg-green-500 p-px" />
+                <img
+                  src={Github}
+                  alt=""
+                  className="w-8 bg-green-500 p-px rounded-sm"
+                />
               </button>
             </a>
             <a href="https://x.com/VishwasKum76893" target="_blank">
-            <button className="p-2 rounded-full hover:bg-gray-100">
-              {/* <Mail className="w-5 h-5 text-green-600" /> */}
-              <img src={X} alt="" className="w-8 bg-green-500 p-2" />
-            </button>
+              <button className="p-2 rounded-full hover:bg-gray-100">
+                {/* <Mail className="w-5 h-5 text-green-600" /> */}
+                <img
+                  src={X}
+                  alt=""
+                  className="w-8 bg-green-500 p-2 rounded-sm"
+                />
+              </button>
             </a>
           </div>
           <a

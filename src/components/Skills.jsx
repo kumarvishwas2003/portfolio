@@ -2,7 +2,7 @@ import React from "react";
 import HTML from "../assets/SVG/html.svg";
 import CSS from "../assets/SVG/css.svg";
 import JS from "../assets/SVG/js.svg";
-import React_icon from "../assets/SVG/React.svg";
+import React_icon from "../assets/SVG/react.svg";
 import MySql from "../assets/SVG/mysql.svg";
 import Mongo from "../assets/SVG/mongo.svg";
 import Node from "../assets/SVG/node.svg";

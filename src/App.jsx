@@ -6,7 +6,12 @@ import MatrixRain from "./components/MatrixRain";
 
 function App() {
   return (
-    <div className="relative min-h-screen">
+    <div
+      className="relative min-h-screen max-h-[400px] overflow-y-auto
+  [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:bg-green-500/50
+  [&::-webkit-scrollbar-thumb]:bg-green-400"
+    >
       {/* Matrix Background - fixed positioning */}
       <MatrixRain speed={0.3} />
 

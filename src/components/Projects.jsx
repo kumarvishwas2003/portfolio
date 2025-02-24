@@ -42,7 +42,11 @@ const Projects = () => {
         <div className="font-bold mt-3 text-xl text-green-500 mb-2">
           Projects
         </div>
-        <div className="overflow-y-auto max-h-[990px] p-2 flex flex-col gap-2">
+        <div
+          className="overflow-y-auto max-h-[990px] p-2 flex flex-col gap-2  [&::-webkit-scrollbar]:w-1
+  [&::-webkit-scrollbar-track]:bg-green-500/50
+  [&::-webkit-scrollbar-thumb]:bg-green-400"
+        >
           {allProjects.projects.map((element, index) => (
             <Project_comp
               key={index}

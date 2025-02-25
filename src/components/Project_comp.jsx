@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../components/Live.css"
 const Project_comp = ({ name, image, description, live, github,techstack }) => {
   return (
     <>
@@ -13,11 +13,18 @@ const Project_comp = ({ name, image, description, live, github,techstack }) => {
         <div className="bg-black p-4 rounded-b-lg">
           <h2 className="text-2xl text-green-500 font-bold">{name}</h2>
           <p className="mt-2 text-green-500">{description}</p>
-          <p className="mt-2 text-green-500 min-w-full">Tech Stack: {techstack+" "}</p>
+          <p className="mt-2 text-green-500 min-w-full">
+            Tech Stack: {techstack + " "}
+          </p>
         </div>
         <div className="bg-black px-4 py-2 rounded-b-lg border-t-2 border-green-400 flex justify-between items-center">
           <a href={live} target="_blank">
-            <span className="text-green-500">LIVE</span>{" "}
+            <span className="text-green-500 font-bold animate-pulse">LIVE</span>{" "}
+            <div>
+              <div className="w-[2rem] h-[2px] bg-green-500 overflow-hidden relative">
+                <div className="live h-[2rem] w-[0.5rem] bg-red-500 absolute"></div>
+              </div>
+            </div>
           </a>
           <a href={github} target="_blank">
             <span className="text-green-500">GITHUB</span>{" "}

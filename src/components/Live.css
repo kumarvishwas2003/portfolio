@@ -1,0 +1,15 @@
+.live{
+    animation: make-live 2s ease-in-out infinite;
+}
+@keyframes make-live{
+    0%{
+        left:0%
+    }
+    50%{
+       left:80%
+        
+    }
+    100%{
+        left:0%
+    }
+}

@@ -64,7 +64,7 @@ const Projects = () => {
           Projects
         </div>
         <div
-          className="overflow-y-auto max-h-[1006px] p-2 flex flex-col gap-2  [&::-webkit-scrollbar]:w-1
+          className="overflow-y-auto max-h-[1163px] p-2 flex flex-col gap-2  [&::-webkit-scrollbar]:w-1
   [&::-webkit-scrollbar-track]:bg-green-500/50
   [&::-webkit-scrollbar-thumb]:bg-green-400"
         >

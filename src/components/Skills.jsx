@@ -1,4 +1,7 @@
 import React from "react";
+import '../components/Skill.css'
+import {useEffect} from "react"
+import InfiniteMarquee from "vanilla-infinite-marquee";
 import HTML from "../assets/SVG/html.svg";
 import CSS from "../assets/SVG/css.svg";
 import JS from "../assets/SVG/js.svg";
@@ -96,25 +99,33 @@ const SkillCard = ({ skill }) => (
 );
 
 const Skills = () => {
+  useEffect(() => {
+    new InfiniteMarquee({
+      element: ".marquee-container",
+      speed: 300000,
+      smoothEdges: true,
+      direction: "left",
+      gap: "15px",
+      pauseOnHover:true,
+      duplicateCount: 2,
+      mobileSettings: {
+        direction: "top",
+        speed: 400000,
+      },
+    });
+  }, []); 
   return (
-    <div className="w-full p-6 overflow-y-hidden">
+    <div className="w-full p-6">
       <h2 className="text-2xl font-bold mb-4 text-green-500">Skills</h2>
       {/* <marquee behavior="" direction=""> */}
-      <div className="max-w-full">
-        <div className="flex">
-          <div className="inline-flex gap-6 pb-4">
-            {skillsData.skills.map((skill, index) => (
-              <SkillCard key={index} skill={skill} />
-            ))}
-          </div>
-          {/* <div className="inline-flex gap-6 pb-4">
-              {skillsData.skills.map((skill, index) => (
-                <SkillCard key={index} skill={skill} />
-              ))}
-            </div> */}
+
+      <div className="flex overflow-hidden marquee-container">
+        <div className="inline-flex gap-6 p-4 ">
+          {skillsData.skills.map((skill, index) => (
+            <SkillCard key={index} skill={skill} />
+          ))}
         </div>
       </div>
-      {/* </marquee> */}
     </div>
   );
 };

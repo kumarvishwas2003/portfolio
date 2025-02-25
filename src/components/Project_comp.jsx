@@ -1,6 +1,6 @@
 import React from "react";
 
-const Project_comp = ({ name, image, description, live, github }) => {
+const Project_comp = ({ name, image, description, live, github,techstack }) => {
   return (
     <>
       <div className="rounded-lg w-full mt-2  border-green-500 border-2 shadow-lg shadow-green-500/50">
@@ -12,15 +12,8 @@ const Project_comp = ({ name, image, description, live, github }) => {
         </div>
         <div className="bg-black p-4 rounded-b-lg">
           <h2 className="text-2xl text-green-500 font-bold">{name}</h2>
-          <p className="mt-2 text-green-500">
-            {description}
-            <a
-              href="#"
-              className="text-green-300 underline hover:text-green-600"
-            >
-              Load more.
-            </a>
-          </p>
+          <p className="mt-2 text-green-500">{description}</p>
+          <p className="mt-2 text-green-500 min-w-full">Tech Stack: {techstack+" "}</p>
         </div>
         <div className="bg-black px-4 py-2 rounded-b-lg border-t-2 border-green-400 flex justify-between items-center">
           <a href={live} target="_blank">

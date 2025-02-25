@@ -110,7 +110,7 @@ const Skills = () => {
       duplicateCount: 2,
       mobileSettings: {
         direction: "top",
-        speed: 250000,
+        speed: 200000,
       },
     });
   }, []);

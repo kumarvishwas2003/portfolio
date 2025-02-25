@@ -1,6 +1,6 @@
 import React from "react";
-import '../components/Skill.css'
-import {useEffect} from "react"
+import "../components/Skill.css";
+import { useEffect } from "react";
 import InfiniteMarquee from "vanilla-infinite-marquee";
 import HTML from "../assets/SVG/html.svg";
 import CSS from "../assets/SVG/css.svg";
@@ -106,14 +106,14 @@ const Skills = () => {
       smoothEdges: true,
       direction: "left",
       gap: "15px",
-      pauseOnHover:true,
+      pauseOnHover: true,
       duplicateCount: 2,
       mobileSettings: {
         direction: "top",
-        speed: 400000,
+        speed: 250000,
       },
     });
-  }, []); 
+  }, []);
   return (
     <div className="w-full p-6">
       <h2 className="text-2xl font-bold mb-4 text-green-500">Skills</h2>

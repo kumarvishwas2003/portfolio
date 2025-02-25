@@ -60,7 +60,7 @@ const Projects = () => {
   return (
     <>
       <div className="main px-3 overflow-auto h-full border-green-500 border-2 rounded-md">
-        <div className="font-bold mt-3 text-xl text-green-500 mb-2">
+        <div className="font-bold mt-3 text-2xl text-green-500 mb-2">
           Projects
         </div>
         <div

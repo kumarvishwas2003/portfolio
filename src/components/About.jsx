@@ -1,25 +1,51 @@
-import React from 'react'
-
+import React from "react";
+import "../components/About.css";
 const About = () => {
   return (
-    <div data-tilt>
-      <div className="font-bold mt-4 ml-4 text-xl text-green-500">About</div>
-      <div className="p-4 text-lg leading-6 tracking-tighter text-justify text-green-500">
-        I'm a frontend developer passionate about crafting seamless digital
-        experiences. Specialized in React and Tailwind CSS, I love building
-        fast, responsive, and visually stunning web applications. Alongside
-        modern frontend frameworks, I also excel in WordPress development,
-        helping brands and individuals establish a strong online presence with
-        dynamic and user-friendly websites. Beyond development, I'm deeply
-        invested in Data Structures and Algorithms (DSA), constantly sharpening
-        my problem-solving skills to write efficient and optimized code. As a
-        Computer Science Engineering student at MVJ College of Engineering, I’m
-        always exploring new technologies, embracing challenges, and pushing
-        boundaries in the tech world. Let's connect and build something amazing
-        together! ✨
+    <div>
+      <div className="font-bold mt-4 ml-4 text-2xl text-green-500">About</div>
+      <div className="text-green-500 p-4 text-md text-justify tracking-tight">
+        <div className="text-2xl flex gap-2 mb-3 items-center justify-center">
+          {" "}
+          <div className="font-bold animate-bounce">Hey there!</div>
+          <div className="wiggle text-5xl">👋</div>
+        </div>
+        I’m a passionate full-stack developer with a deep love for crafting
+        seamless digital experiences. From designing pixel-perfect UI components
+        to building robust backend architectures, I thrive on turning ideas into
+        reality. I specialize in modern web technologies, ensuring every project
+        is built for performance, scalability, and user engagement.
+        <br />
+        My expertise includes:
+        <br />
+        <span className="text-green-500 font-bold animate-pulse">
+          Front-End Magic:
+        </span>{" "}
+        HTML, CSS, SCSS, Tailwind CSS, JavaScript, React.js, and WordPress
+        (Elementor).
+        <br />{" "}
+        <span className="text-green-500 font-bold animate-pulse">
+          Back-End Power:
+        </span>{" "}
+        Node.js, Express.js, MongoDB.
+        <br />{" "}
+        <span className="text-green-500 font-bold animate-pulse">
+          Core Programming & Logic:
+        </span>{" "}
+        Java, Data Structures & Algorithms (DSA).
+        <br />
+        <span className="text-green-500 font-bold animate-pulse">
+          AI & Automation:
+        </span>{" "}
+        ChatGPT, DeepSeek, and other AI-driven tools.
+        <br /> I love staying ahead of the curve, constantly exploring new
+        technologies, and optimizing workflows for efficiency and innovation. If
+        you're looking for a developer who brings creativity, precision, and a
+        problem-solving mindset, let’s connect and build something amazing
+        together!
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;

@@ -1,0 +1,12 @@
+.wiggle{
+    animation: wiggle-animation 1s ease-in-out infinite;
+}
+@keyframes wiggle-animation {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  
+  }

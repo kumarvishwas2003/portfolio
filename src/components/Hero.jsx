@@ -9,16 +9,12 @@ import Resume from "../assets/resume.pdf"
 export const Hero = () => {
   return (
     <>
-      <div className="main tracking-tighter" data-tilt>
-        <div className="banner w-full h-[170px] relative border-b-2  bg-green-500 ">
-          <img
-            src={banner}
-            alt=""
-            className="-z-10 border-green-500 border-b-2 shadow-lg shadow-green-500/50 "
-          />
+      <div className="main tracking-tighter">
+        <div className="banner w-full h-[170px] relative bg-[#2E3A3A]">
+          <img src={banner} alt="" className="-z-10 border-green-500" />
         </div>
         <div
-          className="profile w-[130px] h-[130px] -mt-16 ml-5 z-10 rounded-full absolute bg-cover bg-center border border-green-500/50 bg-green-600 shadow-lg shadow-green-500/50"
+          className="profile w-[130px] h-[130px] -mt-16 ml-5 z-10 rounded-full absolute bg-cover bg-center border border-green-500/50 shadow-2xl shadow-green-500/50 bg-green-500/60"
           style={{ backgroundImage: `url(${profile})` }}
         ></div>
 
@@ -75,11 +71,7 @@ export const Hero = () => {
               </button>
             </a>
           </div>
-          <a
-            href={Resume}
-            download="Vishwas's Resume"
-            target="_blank"
-          >
+          <a href={Resume} download="Vishwas's Resume" target="_blank">
             <button className="px-3 py-2 border mb-3 mt-2 border-green-500 rounded-full flex items-center gap-2 bg-black-500 text-green-500 hover:bg-gray-50 font-bold">
               <img
                 src={Download}

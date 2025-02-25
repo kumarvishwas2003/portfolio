@@ -3,7 +3,8 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import { Hero } from "./components/Hero";
 import MatrixRain from "./components/MatrixRain";
-
+import Contact from "./components/Contact";
+import React from "react";
 function App() {
   
   return (
@@ -43,8 +44,8 @@ function App() {
             </div>
 
             {/* Bottom Section */}
-            <div className="bg-black/90 border border-green-500/50 w-full h-72 mt-4 rounded-md  shadow-lg shadow-green-500/50">
-              bottom
+            <div className="bg-black/90 border border-green-500/50 w-full mt-4 rounded-md shadow-lg shadow-green-500/50">
+              <Contact/>
             </div>
           </div>
         </div>

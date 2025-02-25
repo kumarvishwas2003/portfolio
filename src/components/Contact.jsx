@@ -27,7 +27,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="text-green-500 bg-black-500/50 py-8">
+    <div className="text-green-500 bg-black-500/50 p-8">
       <div className="text-3xl font-bold mb-8 text-center">Contact Me!</div>
 
       <form onSubmit={onSubmit} className="max-w-2xl mx-auto space-y-6">

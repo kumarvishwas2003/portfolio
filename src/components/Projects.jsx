@@ -23,7 +23,7 @@ const Projects = () => {
         image: `${budget}`,
         description:
           "A finance tracker web app that helps users log daily expenses and generate a structured summary, categorized by date and day. The platform also provides the option to download a PDF report for easy financial tracking and analysis.",
-        live: "https://your-live-link.com/budget-buddy", // {/* live ot yet present */}
+        live: "http://budget-buddy.great-site.net/", // {/* live ot yet present */}
         github: "https://github.com/kumarvishwas2003/Budget-Buddy",
         techStack: ["HTML", "Tailwind CSS", "JavaScript", "PHP", "MySQL"],
       },
